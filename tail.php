@@ -15,7 +15,7 @@ $textColor = ""; //use CSS color
 // Don't have to change anything bellow
 if(!$textColor) $textColor = "white";
 if($interval < 100)  $interval = 100; 
-if($_GET['getLog']){
+if(isset($_GET['getLog'])){
 	echo file_get_contents($logFile);
 }else{
 ?>
